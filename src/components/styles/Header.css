@@ -1,0 +1,17 @@
+:root {
+  --active-nav-blue: #11abb0;
+  --background-header: #262626;
+}
+
+.s-header.layout {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: var(--background-header);
+  top: 0;
+}
+
+.current {
+  color: var(--active-nav-blue) !important;
+  font-weight: 600;
+}
