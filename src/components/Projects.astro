@@ -115,7 +115,7 @@ const PROJECTS = [
             <img
               alt={title}
               class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
-              loading="lazy"
+              loading="eager"
               src={image}
             />
           </div>
@@ -125,7 +125,7 @@ const PROJECTS = [
             {title}
           </h3>
           <div class="flex flex-wrap mt-2">
-            <ul class="flex flex-row mb-2 gap-x-2">
+            <ul class="flex flex-wrap gap-x-3 gap-y-2 mb-2">
               {tags.map((tag) => (
                 <li>
                   <span
