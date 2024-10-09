@@ -1,0 +1,36 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Certificación Java y Spring",
+    company: "ADA school",
+    description:
+      "Estoy realizando un curso sobre desarrollo backend con Java y Spring Boot en ADA school, donde he aprendido a crear APIs RESTful, a trabajar con bases de datos relacionales y no relacionales, implementar seguridad en las aplicaciones,como implementar correctamente el modelo de microservicios.",
+  },
+  {
+    date: "2024",
+    title: "Pasantías",
+    company: "Is4Tech",
+    description:
+      "Estoy realizando pasantías en Is4Tech, dónde he puesto en práctica mis conocimientos en desarrollo web y desarrollo móvil, además de la oportunidad de trabajar en equipo con marcos de trabajo ágiles como Scrum, conocer el uso correcto del modelo de ramas GitFlow, y conocer sobre el uso de herramientas de CI/CD.",
+  },
+  {
+    date: "2022-2024",
+    title: "Périto en informática",
+    company: "Centro Educativo Técnico Laboral Kinal",
+    description:
+      "Durante estos 3 años estuve cursando la carrera de Périto en Informática, donde aprendí sobre desarrollo web, desarrollo móvil, redes y sistemas operativos, conoci sobre lenguajes de programación, bases de datos, control de versiones. Durante este proceso obtuve muchas de las bases de las herramientas que utilizo en la actualidad.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
